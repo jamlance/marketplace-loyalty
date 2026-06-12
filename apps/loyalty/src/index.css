@@ -1,0 +1,31 @@
+@import "@inkress/apps-core/styles.css";
+
+/* Loyalty — points, members, rewards. Builds on the apps-core design system. */
+
+.bv-sm { font-size: 0.72rem; }
+.bv-link { color: var(--accent); word-break: break-all; font-size: 0.78rem; }
+
+/* inline notice (webhook off / email off / platform note) */
+.bv-note {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 12px 14px; border: 1px solid var(--line); border-radius: var(--r);
+  background: var(--panel);
+}
+.bv-note > .ic, .bv-note > svg, .bv-note > span:first-child { color: var(--accent); flex: 0 0 auto; margin-top: 1px; }
+.bv-note p { margin: 4px 0 0; }
+
+/* settings grids + toggles */
+.bv-formgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.bv-toggle {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0; border-top: 1px solid var(--line); font-size: 0.875rem;
+}
+.bv-toggle:first-child { border-top: 0; }
+.bv-toggle input[type="checkbox"] { width: auto; height: auto; accent-color: var(--accent); }
+
+/* member modal */
+.bv-bigstat { text-align: center; padding: 8px 0 14px; }
+.bv-bigstat .v { font-size: 2.4rem; font-weight: 800; line-height: 1; }
+.bv-bigstat .k { color: var(--ink-soft); font-size: 0.82rem; margin-top: 4px; }
+.bv-rowbtns { display: flex; gap: 8px; margin: 12px 0; }
+.bv-rowbtns > button { flex: 1; }
